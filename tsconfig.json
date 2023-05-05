@@ -31,5 +31,4 @@
     "lib/**/*.ts",
     "lib/**/*.d.ts"
   ],
-  "files": ["global.d.ts"]
 }
