@@ -26,7 +26,7 @@ export interface AuthenticationNextStepRequiredResponse {
   message: string
 
   // Data from the server
-  data: unknown
+  data?: unknown
 }
 
 export type AuthenticationResponse = AuthenticationSuccessfulResponse | AuthenticationNextStepRequiredResponse
