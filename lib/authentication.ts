@@ -11,9 +11,6 @@ export interface AuthenticationSuccessfulResponse {
   // The ID token is a JWT token that contains information about the user
   idToken: string
 
-  // Date and time when token expires
-  expiresAt: number
-
   // Session ID is a unique identifier for the user's session
   sessionId: string
 
@@ -44,7 +41,4 @@ export interface RefreshTokenRequest {
 export interface RefreshTokenResponse {
   // The ID token is a JWT token that contains information about the user
   idToken: string
-
-  // Date and time when token expires
-  expiresAt: number
 }
