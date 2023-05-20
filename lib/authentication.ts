@@ -7,7 +7,7 @@ export interface AuthenticationRequest {
   authorizationCode: string
 }
 
-export interface AuthenticationResponse {
+export interface AuthenticationSuccessfulResponse {
   // The ID token is a JWT token that contains information about the user
   idToken: string
 
@@ -20,6 +20,17 @@ export interface AuthenticationResponse {
   // ID of the user's database
   collectionId: string
 }
+
+export interface AuthenticationNextStepRequiredResponse {
+  // Message to be displayed to the user
+  message: string
+
+  // Data from the server
+  data: unknown
+}
+
+export type AuthenticationResponse = AuthenticationSuccessfulResponse | AuthenticationNextStepRequiredResponse
+
 
 /* -------------------------------------------------------------------------- */
 /*                                Refresh token                               */
