@@ -8,6 +8,8 @@ export interface AuthenticationRequest {
 }
 
 export interface AuthenticationSuccessfulResponse {
+  status: 'ok',
+
   // The ID token is a JWT token that contains information about the user
   idToken: string
 
@@ -19,6 +21,8 @@ export interface AuthenticationSuccessfulResponse {
 }
 
 export interface AuthenticationNextStepRequiredResponse {
+  status: 'next',
+
   // Message to be displayed to the user
   message: string
 

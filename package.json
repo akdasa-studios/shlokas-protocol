@@ -1,6 +1,6 @@
 {
   "name": "@akdasa-studios/shlokas-protocol",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Library with interfaces describing the communication protocol between the client and the server",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
